@@ -1,0 +1,27 @@
+name: Do things every 5 minutes
+on:
+  push:
+    branches: [ main, master ]
+  schedule:
+    - cron: "0 13 * * 1-5"
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4
+      with:
+        node-version: 3.12.3
+    - name: Install Python dependencies
+      uses: py-actions/py-dependency-install@v4
+      with:
+        path: "./requirements.txt"
+    - name: Run tests
+      run: python -m pytest -s --target-env=./config/dev.json --html=report.html --self-contained-html
+    - uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() }}
+      with:
+        name: test-html-report
+        path: ./report.html
+        retention-days: 30
