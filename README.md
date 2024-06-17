@@ -34,4 +34,3 @@ python -m pytest .\test_case\test_cat_fact_multi_environment.py --target-env=./c
 1. Verify HTML Test Execution Report generated in project root directory 
 ###### C:\Users\username\AnyFolder\apipytestsample>./report.html
 ![SampleTestReport](./TestReport.png)
-
