@@ -34,3 +34,9 @@ python -m pytest .\test_case\test_cat_fact_multi_environment.py --target-env=./c
 1. Verify HTML Test Execution Report generated in project root directory 
 ###### C:\Users\username\AnyFolder\apipytestsample>./report.html
 ![SampleTestReport](./TestReport.png)
+
+
+### CI/CD Integration using GITHUB Actions
+##### For Every push to this Repository OR as per the schedule every Monday-Friday at noon 1 pm, a pipeline is auto triggered and tests will be executed and report is saved as artifact
+#### CI/CD [GITHUB PIPELINE LINK](https://github.com/muneerashaik243/apipytestsample/actions/). 
+![GITHUB ACTIONS PIPELINE SUCCESS RESULT](./CICDsuccess.png)
