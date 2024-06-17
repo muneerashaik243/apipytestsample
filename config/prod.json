@@ -1,0 +1,17 @@
+{
+  "host": "https://catfact.ninja",
+  "getCatFacts": "/facts?label=1&active=true&page=1&limit=1",
+  "getRandomFact": "/fact",
+  "getCatBreed":"/breeds?limit=1",
+  "factResponse":{
+    "fact": "Unlike dogs, cats do not have a sweet tooth. Scientists believe this is due to a mutation in a key taste receptor.",
+    "length": 114
+  },
+  "breedResponse":{
+    "breed": "Abyssinian",
+    "country": "Ethiopia",
+    "origin": "Natural/Standard",
+    "coat": "Short",
+    "pattern": "Ticked"
+  }
+}
