@@ -1,4 +1,4 @@
-name: Do things every 5 minutes
+name: Run Tests on Schedule every Monday to Friday at noon 1 pm and on every push
 on:
   push:
     branches: [ main, master ]
